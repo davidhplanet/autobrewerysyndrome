@@ -1,10 +1,10 @@
 {
   "publishes": {
-    "inner-olive-ejhy": {
-      "siteUrl": "https://inner-olive-ejhy.here.now/",
-      "claimToken": "88dd23ff223b4151cf12329b45be93f7f9a31fad60bf252ba9af5bec35fae0a1",
-      "claimUrl": "https://here.now/claim?slug=inner-olive-ejhy&token=88dd23ff223b4151cf12329b45be93f7f9a31fad60bf252ba9af5bec35fae0a1",
-      "expiresAt": "2026-04-13T19:44:44.462Z"
+    "trusty-sprout-2xj7": {
+      "siteUrl": "https://trusty-sprout-2xj7.here.now/",
+      "claimToken": "fa661b0bf3133c3ed1967b8888083759c6f3a52aa430faa0710d824628d9fb31",
+      "claimUrl": "https://here.now/claim?slug=trusty-sprout-2xj7&token=fa661b0bf3133c3ed1967b8888083759c6f3a52aa430faa0710d824628d9fb31",
+      "expiresAt": "2026-04-13T22:06:48.818Z"
     }
   }
 }
