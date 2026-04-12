@@ -1,0 +1,10 @@
+{
+  "publishes": {
+    "inner-olive-ejhy": {
+      "siteUrl": "https://inner-olive-ejhy.here.now/",
+      "claimToken": "88dd23ff223b4151cf12329b45be93f7f9a31fad60bf252ba9af5bec35fae0a1",
+      "claimUrl": "https://here.now/claim?slug=inner-olive-ejhy&token=88dd23ff223b4151cf12329b45be93f7f9a31fad60bf252ba9af5bec35fae0a1",
+      "expiresAt": "2026-04-13T19:44:44.462Z"
+    }
+  }
+}
