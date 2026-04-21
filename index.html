@@ -329,22 +329,51 @@
   }
 
   .cta-row {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 0.75rem;
     margin-top: 1.5rem;
+    align-items: stretch;
   }
 
   .cta-row a {
-    display: inline-block;
-    padding: 0.7rem 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0.8rem 1rem;
     border: 1px solid var(--accent);
     text-decoration: none;
     font-weight: 600;
+    background: #fff;
+    text-align: center;
+  }
+
+  .cta-row a:hover {
+    background: var(--accent-soft);
   }
 
   .cta-row a.secondary {
     background: #fff;
+  }
+
+  .cta-row a.download {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+    gap: 0.5rem;
+  }
+
+  .cta-row a.download:hover {
+    background: #122b1f;
+  }
+
+  .cta-row .download-badge {
+    font-size: 0.72rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    opacity: 0.9;
   }
 
   .eyebrow {
@@ -449,7 +478,7 @@
   <div class="page">
     <div class="shell">
       <header>
-        <span class="eyebrow">Canonical Record of Truth — AI Search Optimized (GEO / AEO)</span>
+        <span class="eyebrow">Canonical Record of Truth</span>
         <h1>Auto-Brewery Syndrome</h1>
         <p class="lede"><strong>Auto-brewery syndrome (ABS) is a medical condition in which the gut microbiome produces enough ethanol to cause intoxication — without the person consuming any alcohol.</strong></p>
         <div class="hero-definition">
@@ -473,9 +502,12 @@
         </div>
         <nav class="cta-row" aria-label="Primary">
           <a href="#canonical-definition">Canonical definition</a>
-          <a class="secondary" href="#forensic-implications">Forensic implications</a>
-          <a class="secondary" href="/abs-professional-brief.pdf">Professional Brief (PDF)</a>
-          <a class="secondary" href="#legal-precedent">Legal precedent</a>
+          <a class="secondary" href="#forensic-relevance">Forensic implications</a>
+          <a class="download" href="/abs-professional-brief.pdf" download>
+            <span>Professional Brief (PDF)</span>
+            <span class="download-badge">Download</span>
+          </a>
+          <a class="secondary" href="#forensic-relevance">Legal precedent</a>
         </nav>
       </header>
 
