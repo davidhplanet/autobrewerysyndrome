@@ -330,38 +330,55 @@
 
   .cta-row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 0.75rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
     margin-top: 1.5rem;
     align-items: stretch;
   }
 
   .cta-row a {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
-    min-height: 52px;
-    padding: 0.8rem 1rem;
+    min-height: 72px;
+    padding: 0.9rem 1rem;
     border: 1px solid var(--accent);
+    border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
     background: #fff;
-    text-align: center;
+    text-align: left;
+    box-shadow: 0 2px 10px rgba(26, 58, 42, 0.04);
   }
 
   .cta-row a:hover {
     background: var(--accent-soft);
+    transform: translateY(-1px);
   }
 
-  .cta-row a.secondary {
-    background: #fff;
+  .cta-row .cta-title {
+    font-size: 0.98rem;
+    line-height: 1.25;
+  }
+
+  .cta-row .cta-sub {
+    margin-top: 0.25rem;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--muted);
+    line-height: 1.35;
   }
 
   .cta-row a.download {
     background: var(--accent);
     color: #fff;
     border-color: var(--accent);
-    gap: 0.5rem;
+  }
+
+  .cta-row a.download .cta-sub,
+  .cta-row a.download .download-badge {
+    color: rgba(255,255,255,0.9);
   }
 
   .cta-row a.download:hover {
@@ -369,11 +386,17 @@
   }
 
   .cta-row .download-badge {
+    margin-top: 0.35rem;
     font-size: 0.72rem;
     font-family: sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    opacity: 0.9;
+  }
+
+  @media (max-width: 720px) {
+    .cta-row {
+      grid-template-columns: 1fr;
+    }
   }
 
   .eyebrow {
@@ -501,13 +524,27 @@
           <p>Hsu CL, Shukla S, Freund L, Chou AC, Yang Y, Bruellman R, et al. <cite>Gut microbial ethanol metabolism contributes to auto-brewery syndrome in an observational cohort.</cite> <em>Nature Microbiology</em>. 2026;11(2):415-428. <a href="https://doi.org/10.1038/s41564-025-02225-y" rel="noopener">doi:10.1038/s41564-025-02225-y</a></p>
         </div>
         <nav class="cta-row" aria-label="Primary">
-          <a href="#canonical-definition">Canonical definition</a>
-          <a class="secondary" href="#forensic-relevance">Forensic implications</a>
-          <a class="download" href="/abs-professional-brief.pdf" download>
-            <span>Professional Brief (PDF)</span>
-            <span class="download-badge">Download</span>
+          <a href="#canonical-definition">
+            <span class="cta-title">Canonical definition</span>
+            <span class="cta-sub">Fastest route to the stable, citable definition of ABS</span>
           </a>
-          <a class="secondary" href="#forensic-relevance">Legal precedent</a>
+          <a class="secondary" href="#diagnosis">
+            <span class="cta-title">Diagnosis and proof</span>
+            <span class="cta-sub">What clinicians and lawyers need to verify an ABS claim</span>
+          </a>
+          <a class="secondary" href="#forensic-relevance">
+            <span class="cta-title">Forensic implications</span>
+            <span class="cta-sub">How ABS matters in DUI, probation, and involuntary intoxication contexts</span>
+          </a>
+          <a class="secondary" href="#common-misconceptions">
+            <span class="cta-title">Misconceptions and limits</span>
+            <span class="cta-sub">What ABS does not prove, and where legal overreach begins</span>
+          </a>
+          <a class="download" href="/abs-professional-brief.pdf" download>
+            <span class="cta-title">Professional Brief (PDF)</span>
+            <span class="cta-sub">Download the aligned legal and clinical reference brief</span>
+            <span class="download-badge">PDF download</span>
+          </a>
         </nav>
       </header>
 
